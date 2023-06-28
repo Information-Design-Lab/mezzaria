@@ -1,0 +1,1141 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>mezz'aria</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="bootstrap.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="P5/p5.js"></script>
+		<!-- <script src="P5/p5.sound.min.js"></script>x -->
+        <script src="P5/sketch.js"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+		
+		<div class="intro col-12 video-container" id="canvasForHTML">
+			
+				<video playsinline autoplay muted loop class="video">
+					<source src="img/animazione_pm10.mp4" type="video/mp4" >
+				</video>
+				<div class="progetto">
+					<h1>mezz'aria</h1>
+					<div class="caption col-md-8 col-sm-12">
+						<p>visualizzare l'inquinamento atmosferico</p>
+					</div>
+					<div class="freccia">
+						<h2><br>&#8595</h2>
+					</div>
+				</div>
+			
+		</div>
+
+	<div class="sfondo_nero">
+		<div class="row row1">
+			<div class="column1 col-md-6 col-sm-12">
+				<div class="title">
+					<h3>Le polveri sottili <br>a mezz'aria</h3>
+				</div>
+				
+				<div class="text">
+					<p>Nell’aria di ogni giorno rimangono sospese minuscole polveri - particolato, anche detto PM - che hanno un diametro di pochi millesimi di millimetro, variabile da 2,5 - PM 2,5 - fino a 10 micrometri - PM10. Queste <span style="color:#fe5000; font-weight:300;">particelle</span>, comunemente chiamate polveri sottili, sono <span style="color:#fe5000; font-weight:300;">inquinanti</span> e hanno la caratteristica di resistere in atmosfera per tempi molto lunghi, quindi, possono essere trasportate anche a grande distanza dal punto di emissione. <br><br>Mezz’aria è un progetto di sensibilizzazione al <span style="color:#fe5000; font-weight:300;">PM10 di Bologna</span> che vuole mettere nero su bianco la tematica dell’inquinamento atmosferico da polveri sottili.</p>
+				</div>
+
+				<div class="fonti-approfondimenti">
+					<p>Ministero della salute - Qualità dell'aria ambiente, 2010</p>
+				</div>
+
+				<div class="didascalia-mobile"> 
+					Le particelle di PM10 da combustione chimica
+				</div>
+				
+				<!-- <div class="menu-pm10">
+					<div class="menu-fixed">
+						<a href="#indici-daria">&#8600 Indici d'aria</a>
+						<a href="#indici-futuri">&#8600 Indici futuri</a>
+						<a href="#about-us">&#8600 About us</a>
+					</div>
+				</div>
+				 -->
+					
+					<div class="menu-scroll">
+						<div class="menu-text">
+							<a href="#canvasForHTML">mezz'aria</a>
+							<a href="#indici-daria">indici d'aria</a>
+							<a href="#indici-futuri">indici futuri</a>
+							<a href="#about-us">about us</a>
+							
+						</div>
+						<button class="button plusmenu"> + </button>
+					</div>
+				</div>
+
+				<div class="column2 col-md-6 col-sm-12" >
+					<div class="image"> 
+					<img class="img pm10" src="img/imm_pm102.jpg" >
+					<div class="img_overlay">
+						<div class="didascalia">Le particelle di PM10 da combustione chimica</div>
+					</div>
+				</div>
+				</div><!--chiusura column2-->
+			</div> <!--chiusura row1-->
+
+
+			<div class="scrolly row">
+				<div class="column1 sticky-column col-md-6 col-sm-12">
+					<div class="title">
+						<h3>Le origini delle particelle di PM10</h3>
+					</div>
+	
+					<div class="text" >
+						<p>Il PM10 può avere sia <span style="color:#fe5000; font-weight:300;">origine naturale</span> che <span style="color:#fe5000; font-weight:300;">antropica</span> e si differenzia in particelle primarie con emissione diretta e particelle secondarie prodotte dalla reazione nell’atmosfera di composti chimici quali ossidi di azoto e zolfo, ammoniaca e composti organici.</p>
+					</div>
+
+					<div class="fonti-approfondimenti">
+						<p>Legambiente – Mal’Aria di città, 2020</p>
+					</div>
+				</div>
+
+				<div class="scrollable-column col-md-6 col-sm-12">
+					<div class="step" data-step="1">
+					</div>
+					<div class="step" data-step="2">
+						<img class="mini-infografiche" src="img/mini-infografiche/primario-secondario.svg"> 
+					</div>
+					<div class="step" data-step="3">
+					</div>
+				</div>
+			</div> <!--chiusura scrolly origini-->
+
+			<div class="scrolly row">
+				<div class="column1 sticky-column col-md-6 col-sm-12">
+					<div class="title">
+						<h3>Fonti naturali</h3>
+					</div>
+	
+					<div class="text" >
+						<p>Le principali fonti naturali di particolato primario sono gli incendi boschivi, l’erosione e la disgregazione delle rocce, le piante (pollini e residui vegetali), le spore, l’aerosol marino e i resti degli insetti.<br><br>Il particolato naturale secondario è costituito da particelle fini che si originano in seguito alla ossidazione di varie sostanze quali: ossidi di azoto liberati da terreni, terpeni (idrocarburi) emessi dalla vegetazione.</p>
+					</div>
+
+					<div class="fonti-approfondimenti">
+						<p>Arpae Emilia-Romagna – Particolato PM10, 2020</p>
+					</div>
+					
+				</div>
+
+				<div class="scrollable-column col-md-6 col-sm-12">
+					<div class="step" data-step="1">
+					</div>
+					<div class="step" data-step="2">
+						<img class="mini-infografiche" src="img/mini-infografiche/naturali.svg">
+					</div>
+					<div class="step" data-step="3">
+					</div>
+				</div>
+			</div> <!--chiusura scrolly fonti-->
+
+			<div class="scrolly row">
+				<div class="column1 sticky-column col-md-6 col-sm-12">
+					<div class="title">
+						<h3>Fonti antropiche</h3>
+					</div>
+	
+					<div class="text" >
+						<p>Il particolato primario di origine antropica è riconducibile principalmente ai processi di combustione quali: emissioni da traffico veicolare (in particolare alle emissioni dei motori diesel), utilizzo di combustibili (carbone, oli, legno, rifiuti, rifiuti agricoli), emissioni industriali (cementifici, fonderie, miniere), attività agricole varie.<br><br>Una percentuale minore è legata all’usura degli pneumatici e dei corpi frenanti delle auto.
+							Le polveri secondarie di origine antropica sono dovute essenzialmente alla ossidazione degli idrocarburi e degli ossidi di zolfo e di azoto emessi dalle <span style="color:#fe5000; font-weight:300;">varie attività dell’uomo</span>.</p>
+					</div>
+
+					<div class="fonti-approfondimenti">
+						<p>Arpae Emilia-Romagna - Inventario emissioni, 2019</p>
+					</div>
+					
+				</div>
+
+				<div class="scrollable-column col-md-6 col-sm-12">
+					<div class="step" data-step="1">
+					</div>
+					<div class="step" data-step="2">
+						<img class="mini-infografiche" src="img/mini-infografiche/antropiche.svg">
+					</div>
+					<div class="step" data-step="3">
+					</div>
+				</div>
+			</div> <!--chiusura scrolly fonti-->
+
+		<div class="scrolly row">
+			<div class=" column1 sticky-column col-md-6 col-sm-12">
+				<div class="title">
+					<h3>Le linee guida per la nostra aria</h3>
+				</div>
+
+				<div class="text" >
+					<p>In Italia il parametro della valutazione di PM10 è la media giornaliera: secondo il D.Lgs. 155/2010 questo <span style="color:#fe5000; font-weight:300;">limite è pari a 50 µg/m<sup>3</sup></span>, da non superare più di 35 volte per anno civile.
+						Nello stesso decreto viene anche stabilito un limite annuale fissato a 40 µg/m<sup>3</sup> come media annua. <br><br>
+						L’OMS - <span style="color:#fe5000; font-weight:300;">Organizzazione Mondiale della Sanità</span> - consiglia invece di non superare il valore giornaliero pari a 45 µg/m<sup>3</sup> e il valore annuale di  20 µg/m<sup>3</sup>, oltre i quali scatta il livello d’allerta. La discrepanza tra questi dati è rilevante: le concentrazioni di polveri sottili e particolato fine da non oltrepassare per legge in Italia sono molto superiori, addirittura doppie, a quelle raccomandate dalla principale autorità mondiale in tema di salute.</p>
+				</div>
+
+				<div class="fonti-approfondimenti">
+					<p>World Health Organization - Linee guida globali OMS, 2022</p>
+					<p>ISS - Le nuove linee guida Oms</p>
+				</div>
+				
+			</div>
+
+			<div class="scrollable-column col-md-6 col-sm-12">
+				<div class="step" data-step="1">
+				</div>
+				<div class="step" data-step="2">
+					<img class="mini-infografiche" src="img/mini-infografiche/limiti.svg" >
+				</div>
+				<div class="step" data-step="3">
+				</div>
+			</div>
+			
+		</div><!--chiusura limiti-->
+
+		<div class="scrolly row">
+			<div class=" column1 sticky-column col-md-6 col-sm-12">
+				<div class="title">
+					<h3>Effetti sulla salute</h3>
+				</div>
+
+				<div class="text" >
+					<p>Grazie alle ridotte dimensioni, le polveri sottili <span style="color:#fe5000; font-weight:300;">penetrano facilmente nei polmoni</span> e possono anche raggiungere il cuore. L’inalazione di polveri sottili può provocare disturbi e <span style="color:#fe5000; font-weight:300;">cambiamenti della funzione respiratoria</span>, come bronchiti e asma che possono anche richiedere il ricovero ospedaliero. Un’esposizione a livelli alti di PM10, anche se limitata a uno o due giorni, può avere effetti negativi sulla salute umana. L’OMS - Organizzazione Mondiale della Sanità - ha collegato il diffondersi di questi effetti ad un aumento della concentrazione media di PM10.
+
+						<br><br>Si stima infatti che un’esposizione a breve termine - da 1 a 5 giorni - ad alti valori di PM10 possa avere una correlazione determinante con la <span style="color:#fe5000; font-weight:300;">percentuale di mortalità</span> per causa specifica, ad esempio difficoltà mentali, cardiache, del sistema nervoso e dell’apparato respiratorio.</p>
+				</div>
+				
+				<div class="fonti-approfondimenti">
+					<p>ISS - Le nuove linee guida Oms e i livello di inquinanti, 2023</p>
+					<p>BIGEPI Collaborative Group - Inquinanti atmosferici e mortalità, 2023</p>
+					<p>WIRED - Deceduti nel 2020 in Italia a causa dell'inquinamento, 2022</p>
+				</div>
+			</div>
+
+			<div class="scrollable-column col-md-6 col-sm-12">
+				<div class="step" data-step="1">
+				</div>
+				<div class="step" data-step="2">
+					<img class="mini-infografiche" src="img/mini-infografiche/salute.svg">
+				</div>
+				<div class="step" data-step="3">
+				</div>
+			</div>
+			
+		</div><!--chiusura limiti-->
+
+	</div><!--chiusura sfondo nero-->
+
+
+
+
+
+<!--inizio sfondo bianco-->
+<div class="intro bologna col-12 video-container" id="indici-daria">
+			
+	<video playsinline autoplay muted loop class="video">
+		<source src="img/Animazione_pm10_bologna.mp4" type="video/mp4" >
+	</video>
+	<div class="progetto bologna">
+		<h1>indici d'aria</h1>
+		<div class="caption col-md-12 col-sm-12">
+			<p>l'andamento del PM10 a Bologna dal 2013 al 2022</p>
+		</div>
+	</div>
+
+</div>
+
+
+	
+
+	<div class="sfondo_bianco">
+		<div class="row row1">
+			<div class="column3 col-md-6 col-sm-12">
+				<div class="title">
+					<h3>La stazione di Porta San Felice</h3>
+				</div>
+				
+				<div class="text">
+					<p>Bologna, capoluogo dell’Emilia Romagna, secondo i dati elaborati dall’Università di Utrecht rientra tra i primi 100 comuni europei con il più alto numero di morti premature da smog. 
+						Tuttavia negli ultimi decenni l’Europa ha migliorato la propria qualità dell’aria. Le emissioni di molte sostanze inquinanti sono state ridotte con successo, al punto che stiamo respirando <span style="color:#fe5000; font-weight:300;">la migliore aria degli ultimi 50 anni</span> ma il particolato e l’inquinamento da polveri sottili continuano a presentare seri rischi per la nostra salute. 
+						
+						<br><br>Grazie alle 7 stazioni di monitoraggio presenti nella città di Bologna - la stazione di Porta San Felice nello specifico - è possibile indagare la qualità dell’aria dell’ultimo decennio e <span style="color:#fe5000; font-weight:300;">confrontare l’andamento del PM10 medio giornaliero</span> con gli eventi meteorologici e antropici che più influenzano l’accumulo o la dispersione delle polveri sottili. 
+						</p>
+						
+				</div>
+
+				<div class="fonti-approfondimenti">
+					<p>Arpa Emilia-Romagna - Qualità dell’aria: provincia di Bologna, 2023</p>
+				</div>
+
+				<div class="didascalia-mobile"> 
+					Cabina di monitoraggio di Porta San Felice 
+				</div>
+			</div> <!--chiusura column3-->
+
+				<div class="column4 col-md-6 col-sm-12" >
+					<div class="image"> 
+						<img class="img" src="img/portasanfelice.png" >
+							<div class="img_overlay">
+								<div class="didascalia"> 
+									Cabina di monitoraggio di Porta San Felice 
+								</div>
+							</div>
+					</div>
+				</div><!--chiusura column4-->
+		</div><!--chiusura row1-->
+
+		<div class="scrolly row">
+			<div class="column1 sticky-column col-md-6 col-sm-12">
+				<div class="title">
+					<h3><span style="color:#fe5000; font-family: 'Karelia';">Piogge e neve</span></h3>
+				</div>
+
+				<div class="text" >
+					<p>Una piccola prima parte della ricaduta al suolo degli inquinanti può avvenire per gravità o rimescolamento dell’aria, ma sono soprattutto <span style="color:#fe5000; font-weight:300;">le precipitazioni</span>, come pioggia o neve, <span style="color:#fe5000; font-weight:300;">a ripulire l’aria dalle particelle sospese</span> tramite deposizione umida, cioè la cattura di inquinanti all’interno delle gocce d’acqua o dei fiocchi di neve grazie ai fenomeni di rainout e washout. 
+
+						<br><br>Il primo meccanismo consiste nella condensazione di gocce d’acqua all’interno delle nubi, a partire proprio da polveri e particelle che agiscono come un nucleo su cui l’acqua può depositarsi. Quando le gocce raggiungono una massa abbastanza alta da precipitare, iniziano a cadere verso il suolo incontrando e catturando ulteriori particelle, portando così al secondo fenomeno, il washout. </p>
+				</div>
+
+				<div class="fonti-approfondimenti">
+					<p>Luca Maria Mercurio - Geopop, 2023</p>
+					<p>Arpa Emilia-Romagna - Dataset climatico dal 1961, 2023</p>
+				</div>
+				
+			</div><!--chiusura column1-->
+
+			<div class="scrollable-column col-md-6 col-sm-12">
+				<div class="step" data-step="1">
+				</div>
+				<div class="step" data-step="2">
+					<video playsinline autoplay muted loop class="video-mini-infografiche">
+						<source src="img/mini-infografiche/pioggia.mp4" type="video/mp4" >
+					</video>
+				</div>
+				<div class="step" data-step="3">
+				</div>
+			</div><!--chiusura scrollable-column-->
+		</div> <!--chiusura scrolly piogge-->
+
+		<div class="scrolly row">
+			<div class="column1 sticky-column col-md-6 col-sm-12">
+				<div class="title">
+					<h3><span style="color:#fe5000; font-family: 'Karelia';">Accensione riscaldamenti</span></h3>
+				</div>
+
+				<div class="text" >
+					<p>Con l’arrivo della stagione fredda si assiste ogni anno ad un peggioramento della qualità dell’aria, rilevabile dal numero di superamenti più o meno elevato del valore limite stabilito dalla normativa per il particolato PM10. Questa situazione deriva dall’effetto combinato di due fenomeni: le condizioni metereologiche e l’attivazione dei sistemi di riscaldamento. In Italia, infatti, solo il settore residenziale è responsabile del <span style="color:#fe5000; font-weight:300;">53% della quantità di PM10</span> di origine antropica. 
+						<br><br>Tra i diversi combustibili utilizzati per il riscaldamento domestico, le biomasse (legno) risultano quelli maggiormente inquinanti per quanto riguarda il PM10. </p>
+				</div>
+
+				<div class="fonti-approfondimenti">
+					<p>Climamarket - Decreto riscaldamento, 2022-2023</p>
+					<p>Arpa Emilia-Romagna - Impatto sulla combustione, 2021</p>
+					<p>Ansa - SOS smog, 2018</p>
+				</div>
+				
+			</div><!--chiusura column1-->
+
+			<div class="scrollable-column col-md-6 col-sm-12">
+				<div class="step" data-step="1">
+				</div>
+				<div class="step" data-step="2">
+					<img class="mini-infografiche" src="img/mini-infografiche/riscaldamenti.svg" > 
+				</div>
+				<div class="step" data-step="3">
+				</div>
+			</div><!--chiusura scrollable-column-->
+		</div> <!--chiusura scrolly riscaldamenti-->
+
+		<div class="scrolly row">
+			<div class="column1 sticky-column col-md-6 col-sm-12">
+				<div class="title">
+					<h3><span style="color:#fe5000; font-family: 'Karelia';">Pressione atmosferica</span></h3>
+				</div>
+
+				<div class="text" >
+					<p>La pressione atmosferica è la pressione presente in qualsiasi punto della superficie terrestre dovuta al peso della colonna d’aria sovrastante. Ma cosa succede alla pressione quando cambia il tempo? 
+						<br><br>La pressione atmosferica diminuisce con l’aumento della temperatura dell’aria, questo perché il riscaldamento provoca una dilatazione e una conseguente diminuzione di densità dell’atmosfera. Al contrario, quando l’aria si raffredda, la densità aumenta e con essa la pressione atmosferica. La persistenza di alta pressione è causa di condizioni di stabilità che, a sua volta, favorisce la formazione di nubi basse e nebbie. L’aria stagnante nei bassi strati però <span style="color:#fe5000; font-weight:300;">favorisce anche l’accumulo degli inquinanti</span> come il PM10.</p>
+				</div>
+
+				<div class="fonti-approfondimenti">
+					<p>Arpa Piemonte - Pressione e cambiamenti del tempo</p>
+					<p>ANSA - Polveri sottili intrappolate da alta pressione, 2015</p>
+				</div>
+				
+			</div><!--chiusura column1-->
+		
+			<div class="scrollable-column col-md-6 col-sm-12">
+				<div class="step" data-step="1">
+				</div>
+				<div class="step" data-step="2">
+					<video playsinline autoplay muted loop class="video-mini-infografiche">
+						<source src="img/mini-infografiche/pressione.mp4" type="video/mp4" >
+					</video>
+				</div>
+				<div class="step" data-step="3">
+				</div>
+			</div><!--chiusura scrollable-column-->
+		</div> <!--chiusura scrolly pressione-->
+	
+			<!--qualità dell'aria-->
+			<main class="main-air" id="dataviz">
+				<section class="scrolly-section" id="scrolly-air">
+					<article class="col-md-3 col-sm-12 article-air">
+						<div class="step" data-step="1" ><!-- 2013 -->
+			              	<div class="anno-air">
+					          <h5> 2013 <h5>
+							</div>
+
+							<div class="text-air">
+								<div class="p-numbers">
+									<p>+57</p>
+								</div>
+								<p>giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+							</div>
+
+							<button class="button button-piogge inactive">vedi le piogge</button>
+
+						</div>
+						<div class="step" data-step="2"><!-- 2014 -->
+							<div class="anno-air">
+								<h5> 2014 <h5>
+							</div>
+
+							<div class="text-air">
+								<div class="p-numbers">
+									<p>+23</p>
+								</div>
+								<p>giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+							</div>
+
+							<button class="button button-piogge inactive">vedi le piogge</button>
+						</div>
+						<div class="step" data-step="3"><!-- 2015 -->
+							<div class="anno-air">
+								<h5> 2015 <h5>
+							</div>
+
+							<div class="text-air">
+								<div class="p-numbers">
+									<p>+38</p>
+								</div>
+								<p>giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+							</div>
+
+							<button class="button button-piogge inactive">vedi le piogge</button>
+						</div>
+						<div class="step" data-step="4"><!-- 2016 -->
+							<div class="anno-air">
+								<h5> 2016 <h5>
+							</div>
+
+							<div class="text-air">
+								<div class="p-numbers">
+									<p>+57</p>
+								</div>
+								<p>giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+							</div>
+
+							<button class="button button-piogge inactive">vedi le piogge</button>
+						</div>
+						<div class="step" data-step="5"><!-- 2017 -->
+							<div class="anno-air">
+								<h5> 2017 <h5>
+							  </div> 
+
+							  <div class="text-air">
+								<div class="p-numbers">
+									<p>+40</p>
+								</div>
+								<p>giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+							</div>
+
+							<button class="button button-piogge inactive">vedi le piogge</button>
+						</div>
+						<div class="step" data-step="6"><!-- 2018 -->
+							<div class="anno-air">
+								<h5> 2018 <h5>
+							</div>
+
+							<div class="text-air">
+								<div class="p-numbers">
+									<p>+18</p>
+								</div>
+								<p>giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+							</div>
+
+							<button class="button button-piogge inactive">vedi le piogge</button>
+						</div>
+						<div class="step" data-step="7"><!-- 2019 -->
+							<div class="anno-air">
+								<h5> 2019 <h5>
+							</div>
+
+							<div class="text-air">
+								<div class="p-numbers">
+									<p>+33</p>
+								</div>
+								<p>giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+							</div>
+
+							<button class="button button-piogge inactive">vedi le piogge</button>
+						</div>
+						<div class="step" data-step="8"><!-- 2020 -->
+							<div class="anno-air">
+								<h5> 2020 <h5>
+							</div>
+
+							<div class="text-air">
+								<div class="p-numbers">
+									<p>+57</p>
+								</div>
+								<p>giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+							</div>
+
+							<button class="button button-piogge inactive">vedi le piogge</button>
+						</div>
+						<div class="step" data-step="9"><!-- 2021 -->
+							<div class="anno-air">
+								<h5> 2021 <h5>
+							</div> 
+
+							<div class="text-air">
+								<div class="p-numbers">
+									<p>+29</p>
+								</div>
+								<p>giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+							</div>
+
+							<button class="button button-piogge inactive">vedi le piogge</button>
+						</div>
+						<div class="step" data-step="10"><!-- 2022 -->
+							<div class="anno-air">
+								<h5> 2022 <h5>
+							</div>
+
+							<div class="text-air">
+								<div class="p-numbers">
+									<p>+33</p>
+								</div>
+								<p>giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+							</div>
+
+							<button class="button button-piogge inactive">vedi le piogge</button>
+						</div>
+					
+						
+					</article>
+			
+					<figure class="col-md-9 col-sm-12 figure-air">
+						<div class="dataviz active" id="dataviz-0"><!-- 2013 -->
+							<div class="dataviz-desktop">
+								<img class="img5 dataviz-no-piogge" src="img/qualita-aria/2013.svg">
+								<img class="img5 dataviz-piogge" src="img/qualita-aria/2013_piogge.svg">
+							</div>
+							<div class="dataviz-mobile">
+								<div class="dataviz-info">
+									<div class="anno-air">
+										<h5> 2013 <h5>
+									</div>
+									<div class="text-air">
+										<div class="p-numbers">
+											<p>+57</p>
+										</div>
+										<p> giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+									</div>
+									<button class="button button-piogge inactive">vedi le piogge</button>
+								</div>
+								<img class="img5 dataviz-mobile-piogge" src="img/qualita-aria/2013-mobile-piogge.svg"> 
+								<img class="img5 dataviz-mobile-no-piogge" src="img/qualita-aria/2013-mobile.svg">
+							</div>
+						</div>
+						<div class="dataviz" id="dataviz-1"><!-- 2014 -->
+							<div class="dataviz-desktop">
+								<img class="img5 dataviz-no-piogge" src="img/qualita-aria/2014.svg"> 
+								<img class="img5 dataviz-piogge" src="img/qualita-aria/2014_piogge.svg">
+							</div>
+							<div class="dataviz-mobile">
+								<div class="dataviz-info">
+									<div class="anno-air">
+										<h5> 2014 <h5>
+									</div>
+									<div class="text-air">
+										<div class="p-numbers">
+											<p>+23</p>
+										</div>
+										<p> giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+									</div>
+									<button class="button button-piogge inactive">vedi le piogge</button>
+								</div>
+								<img class="img5 dataviz-mobile-piogge" src="img/qualita-aria/2014-mobile-piogge.svg"> 
+								<img class="img5 dataviz-mobile-no-piogge" src="img/qualita-aria/2014-mobile.svg"> 
+							</div>
+
+						</div>
+						<div class="dataviz" id="dataviz-2"><!-- 2015 -->
+							<div class="dataviz-desktop">
+								<img class="img5 dataviz-no-piogge" src="img/qualita-aria/2015.svg"> 
+								<img class="img5 dataviz-piogge" src="img/qualita-aria/2015_piogge.svg">
+							</div>
+							<div class="dataviz-mobile">
+								<div class="dataviz-info">
+									<div class="anno-air">
+										<h5> 2015 <h5>
+									</div>
+									<div class="text-air">
+										<div class="p-numbers">
+											<p>+38</p>
+										</div>
+										<p> giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+									</div>
+									<button class="button button-piogge inactive">vedi le piogge</button>
+								</div>
+								<img class="img5 dataviz-mobile-piogge" src="img/qualita-aria/2015-mobile-piogge.svg"> 
+								<img class="img5 dataviz-mobile-no-piogge" src="img/qualita-aria/2015-mobile.svg"> 
+							</div>
+						</div>
+						<div class="dataviz" id="dataviz-3"><!-- 2016 -->
+							<div class="dataviz-desktop">
+								<img class="img5 dataviz-no-piogge" src="img/qualita-aria/2016.svg"> 
+								<img class="img5 dataviz-piogge" src="img/qualita-aria/2016_piogge.svg">
+							</div>
+							<div class="dataviz-mobile">
+								<div class="dataviz-info">
+									<div class="anno-air">
+										<h5> 2016 <h5>
+									</div>
+									<div class="text-air">
+										<div class="p-numbers">
+											<p>+57</p>
+										</div>
+										<p> giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+									</div>
+									<button class="button button-piogge inactive">vedi le piogge</button>
+								</div>
+								<img class="img5 dataviz-mobile-piogge" src="img/qualita-aria/2016-mobile-piogge.svg"> 
+								<img class="img5 dataviz-mobile-no-piogge" src="img/qualita-aria/2016-mobile.svg"> 
+							</div>
+							
+						</div>
+						<div class="dataviz" id="dataviz-4"><!-- 2017 -->
+							<div class="dataviz-desktop">
+								<img class="img5 dataviz-no-piogge" src="img/qualita-aria/2017.svg"> 
+								<img class="img5 dataviz-piogge" src="img/qualita-aria/2017_piogge.svg">
+							</div>
+							<div class="dataviz-mobile">
+								<div class="dataviz-info">
+									<div class="anno-air">
+										<h5> 2017 <h5>
+									</div>
+									<div class="text-air">
+										<div class="p-numbers">
+											<p>+40</p>
+										</div>
+										<p> giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+									</div>
+									<button class="button button-piogge inactive">vedi le piogge</button>
+								</div>
+								<img class="img5 dataviz-mobile-piogge" src="img/qualita-aria/2017-mobile-piogge.svg"> 
+								<img class="img5 dataviz-mobile-no-piogge" src="img/qualita-aria/2017-mobile.svg"> 
+							</div> 
+
+						</div>
+						<div class="dataviz" id="dataviz-5"><!-- 2018 -->
+							<div class="dataviz-desktop">
+								<img class="img5 dataviz-no-piogge" src="img/qualita-aria/2018.svg"> 
+								<img class="img5 dataviz-piogge" src="img/qualita-aria/2018_piogge.svg">
+							</div>
+							<div class="dataviz-mobile">
+								<div class="dataviz-info">
+									<div class="anno-air">
+										<h5> 2018 <h5>
+									</div>
+									<div class="text-air">
+										<div class="p-numbers">
+											<p>+18</p>
+										</div>
+										<p> giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+									</div>
+									<button class="button button-piogge inactive">vedi le piogge</button>
+								</div>
+								<img class="img5 dataviz-mobile-piogge" src="img/qualita-aria/2018-mobile-piogge.svg"> 
+								<img class="img5 dataviz-mobile-no-piogge" src="img/qualita-aria/2018-mobile.svg"> 
+							</div>
+						</div>
+						<div class="dataviz" id="dataviz-6"><!-- 2019 -->
+							<div class="dataviz-desktop">
+								<img class="img5 dataviz-no-piogge" src="img/qualita-aria/2019.svg"> 
+								<img class="img5 dataviz-piogge" src="img/qualita-aria/2019_piogge.svg">
+							</div>
+							<div class="dataviz-mobile">
+								<div class="dataviz-info">
+									<div class="anno-air">
+										<h5> 2019 <h5>
+									</div>
+									<div class="text-air">
+										<div class="p-numbers">
+											<p>+33</p>
+										</div>
+										<p> giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+									</div>
+									<button class="button button-piogge inactive">vedi le piogge</button>
+								</div>
+								<img class="img5 dataviz-mobile-piogge" src="img/qualita-aria/2019-mobile-piogge.svg"> 
+								<img class="img5 dataviz-mobile-no-piogge" src="img/qualita-aria/2019-mobile.svg"> 
+							</div>
+						</div>
+						<div class="dataviz" id="dataviz-7"><!-- 2020 -->
+							<div class="dataviz-desktop">
+								<img class="img5 dataviz-no-piogge" src="img/qualita-aria/2020.svg"> 
+								<img class="img5 dataviz-piogge" src="img/qualita-aria/2020_piogge.svg">
+							</div>
+							<div class="dataviz-mobile">
+								<div class="dataviz-info">
+									<div class="anno-air">
+										<h5> 2020 <h5>
+									</div>
+									<div class="text-air">
+										<div class="p-numbers">
+											<p>+57</p>
+										</div>
+										<p> giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+									</div>
+									<button class="button button-piogge inactive">vedi le piogge</button>
+								</div>
+								<img class="img5 dataviz-mobile-piogge" src="img/qualita-aria/2020-mobile-piogge.svg"> 
+								<img class="img5 dataviz-mobile-no-piogge" src="img/qualita-aria/2020-mobile.svg"> 
+							</div>
+						</div>
+						<div class="dataviz" id="dataviz-8"><!-- 2021 -->
+							<div class="dataviz-desktop">
+								<img class="img5 dataviz-no-piogge" src="img/qualita-aria/2021.svg"> 
+								<img class="img5 dataviz-piogge" src="img/qualita-aria/2021_piogge.svg">
+							</div>
+							<div class="dataviz-mobile">
+								<div class="dataviz-info">
+									<div class="anno-air">
+										<h5> 2021 <h5>
+									</div>
+									<div class="text-air">
+										<div class="p-numbers">
+											<p>+29</p>
+										</div>
+										<p> giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+									</div>
+									<button class="button button-piogge inactive">vedi le piogge</button>
+								</div>
+								<img class="img5 dataviz-mobile-piogge" src="img/qualita-aria/2021-mobile-piogge.svg"> 
+								<img class="img5 dataviz-mobile-no-piogge" src="img/qualita-aria/2021-mobile.svg"> 
+							</div>
+						</div>
+						<div class="dataviz" id="dataviz-9"><!-- 2022 -->
+							<div class="dataviz-desktop">
+								<img class="img5 dataviz-no-piogge" src="img/qualita-aria/2022.svg"> 
+								<img class="img5 dataviz-piogge" src="img/qualita-aria/2022_piogge.svg">
+							</div>
+							<div class="dataviz-mobile">
+								<div class="dataviz-info">
+									<div class="anno-air">
+										<h5> 2022 <h5>
+									</div>
+									<div class="text-air">
+										<div class="p-numbers">
+											<p>+33</p>
+										</div>
+										<p>giorni oltre il <span style="color:#fe5000; font-weight:400;">limite giornaliero</span></p>
+									</div>
+									<button class="button button-piogge inactive">vedi le piogge</button>
+								</div>
+								<img class="img5 dataviz-mobile-piogge" src="img/qualita-aria/2022-mobile-piogge.svg"> 
+								<img class="img5 dataviz-mobile-no-piogge" src="img/qualita-aria/2022-mobile.svg"> 
+							</div>
+						</div>
+						<div class="dataviz" id="dataviz-10"><!--  -->
+						</div>
+						
+					</figure>
+
+				</section>
+		
+			</main><!--chiusura datavis QUALITA ARIA-->
+		</div><!--chiusura sfondo bianco-->
+
+		<div class="sfondo_nero">
+
+
+			<div class="intro clara col-12 video-container" id="indici-futuri">
+			
+				<video playsinline autoplay muted loop class="video">
+					<source src="img/Animazione_pm10_clara.mp4" type="video/mp4" >
+				</video>
+				<div class="progetto clara">
+					<h1>indici futuri</h1>
+					<div class="caption col-md-7 col-sm-12">
+						<p>l'influenza del cambiamento climatico sul PM10 di Bologna dal 2037 al 2063</p>
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="row row1">
+				<div class="column3 col-md-6 col-sm-12 playground">
+					<div class="title">
+						<h3>Cambiamento climatico e PM10</h3>
+					</div>
+
+					<div class="text" >
+						<p>Le conseguenze del cambiamento climatico impattano sempre di più sulle nostre vite: dagli eventi meteorologici estremi, alle minacce al sistema alimentare e alle biodiversità, per non parlare del del rischio a cui ci sottoponiamo ogni giorno per le sostanze nocive che gravitano nell'atmosfera. 
+							<br><br>Gli esperti ambientali dell’ONU e dell’Agenzia Ambientale Europea (EEA) ribadiscono che <span style="color:#fe5000; font-weight:300;">l’inquinamento atmosferico</span>, dovuto anche alle emissioni di PM10, <span style="color:#fe5000; font-weight:300;">e il cambiamento climatico</span> sono strettamente collegati tra loro. Le variazioni delle condizioni metereologiche, dovute ai cambiamenti climatici, possono infatti alterare il trasporto e la dispersione di inquinanti nell’atmosfera e la loro ricaduta al suolo.</p>
+					</div>
+
+					<div class="fonti-approfondimenti">
+						<p>European Environment Agency - Inquinamento atmosferico, 2020<br>
+						UCAR - Predictions of Future Global Climate, 2021</p>
+					</div>
+
+					<div class="didascalia-mobile"> 
+						Bologna con aria contaminata da alti valori di PM10, immagine generata con AI playground
+					</div>
+					
+				</div> <!--chiusura column3-->
+	
+					<div class="column4 col-md-6 col-sm-12" >
+						<div class="image"> 
+							<img class="img bologna" src="img/bologna_playground.png" >
+								<div class="img_overlay">
+									<div class="didascalia"> 
+										Bologna con aria contaminata da alti valori di PM10<br>
+										Immagine generata con intelligenza artificiale
+									</div>
+								</div>
+						</div>
+					</div><!--chiusura column4-->
+			</div><!--chiusura row1 e intro progetto clara-->
+	
+	
+			<div class="scrolly row">
+				<div class="column1 sticky-column col-md-6 col-sm-12">
+					<div class="title">
+						<h3>PM10 nel futuro prossimo</h3>
+					</div>
+	
+					<div class="text" >
+						<p>Il cambiamento climatico potrebbe avere effetti consistenti riguardanti la qualità dell’aria nel Bacino Padano. La valutazione dell’impatto del clima sulla qualità dell’aria è ancora oggetto di studio, ma sono già disponibili delle stime di come il cambiamento del clima possa influenzare la qualità dell'aria, specialmente per quanto riguarda PM10 riferendosi sia allo scenario presente, sia allo scenario futuro di Bologna. <br><br>Si stima, infatti, che a causa delle condizioni climatiche - ad esempio giornate in cui le piogge sono assenti e i venti sono troppo deboli per disperdere le polveri sottili - circa 3 giorni su 10 sono <span style="color:#fe5000; font-weight:300;">favorevoli all’accumulo di PM10</span>; si tratta di giorni che presentano un insieme di condizioni meteorologiche predisposte alla concentrazione e all’accumulo di PM10.</p>
+					</div>
+
+					<div class="fonti-approfondimenti">
+						<p>Arpa Emilia-Romagna - Giorni favorevoli all’accumulo di PM10</p>
+						<p>Arpa Emilia-Romagna - CLARA-AQCLI, 2019</p>
+					</div>
+					
+				</div><!--chiusura column1-->
+	
+				<div class="scrollable-column col-md-6 col-sm-12">
+					<div class="step" data-step="1">
+					</div>
+					<div class="step" data-step="2">
+						<div class="dataviz-desktop">
+							<img class="mini-infografiche" src="img/mini-infografiche/giorni-favorevoli.svg" > 
+						</div>
+						<div class="dataviz-mobile">
+							<img class="mini-infografiche" src="img/mini-infografiche/giorni-favorevoli-mobile.svg"> 
+							<!--anno in css-->
+						</div>
+					</div>
+					<div class="step" data-step="3">
+					</div>
+				</div><!--chiusura scrollable-column-->
+			</div> <!--chiusura scrolly gg favorevoli e sfavorevoli-->
+
+			<!--CLARA-->
+			<main class="main-clara">
+				<section class="scrolly-section" id="scrolly-clara">
+					<article class="col-md-2 col-sm-12 article-clara">
+						<div class="step" data-step="1" >
+							<img class="img3" src="img/clara/clara-2037-A.svg">
+							<!-- <div class="anno">
+								<h6>2037</h6>
+							</div> -->
+					</div>
+						<div class="step" data-step="2">
+							<img class="img3" src="img/clara/clara-2044-A.svg">
+							<!-- <div class="anno">
+								<h6>2044</h6>
+							</div> -->
+						</div>
+						<div class="step" data-step="3">
+							<img class="img3" src="img/clara/clara-2050-A.svg"> 
+						</div>
+						<div class="step" data-step="4">
+							<img class="img3" src="img/clara/clara-2053-A.svg"> 
+						</div>
+						<div class="step" data-step="4">
+							<img class="img3" src="img/clara/clara-2063-A.svg"> 
+						</div>
+						<div class="step" data-step="5">
+							<!-- <img class="img3" src="img/clara/clara_2063_A.png">  -->
+						</div>
+						
+					</article>
+			
+					<figure class="col-md-10 col-sm-12 figure-clara">
+						<div class="dataviz active" id="dataviz-0">
+							<div class="dataviz-desktop">
+								<img class="img5" src="img/clara/clara-2037-B.svg"> 
+							</div>
+							<div class="dataviz-mobile">
+								<img class="img5" src="img/clara/mobile-2037.svg"> 
+								<!--anno in css-->
+							</div>
+						</div>
+						
+						<div class="dataviz" id="dataviz-1">
+							<div class="dataviz-desktop">
+								<img class="img5" src="img/clara/clara-2044-B.svg"> 
+							</div>
+							<div class="dataviz-mobile">
+								<img class="img5" src="img/clara/mobile-2044.svg"> 
+								<!--anno in css-->
+							</div>
+						</div>
+						<div class="dataviz" id="dataviz-2">
+							<div class="dataviz-desktop">
+								<img class="img5" src="img/clara/clara-2050-B.svg"> 
+							</div>
+							<div class="dataviz-mobile">
+								<img class="img5" src="img/clara/mobile-2050.svg"> 
+								<!--anno in css-->
+							</div>
+						</div>
+						<div class="dataviz" id="dataviz-3">
+							<div class="dataviz-desktop">
+								<img class="img5" src="img/clara/clara-2053-B.svg"> 
+							</div>
+							<div class="dataviz-mobile">
+								<img class="img5" src="img/clara/mobile-2053.svg"> 
+							</div> 
+						</div>
+						<div class="dataviz" id="dataviz-4">
+							<div class="dataviz-desktop">
+								<img class="img5" src="img/clara/clara-2063-B.svg"> 
+							</div>
+							<div class="dataviz-mobile">
+								<img class="img5" src="img/clara/mobile-2063.svg"> 
+							</div>
+						</div>
+						<div class="dataviz" id="dataviz-5">
+							
+						</div>
+						
+					</figure>
+
+				</section>
+		
+			</main><!--chiusura clara-->
+		</div> <!--chiusura sfondo nero-->
+
+		<div class="sfondo_bianco">
+			<div class="intro about-us col-12 video-container" id="about-us">
+			
+				<video playsinline autoplay muted loop class="video">
+					<source src="img/Animazione_pm10_about.mp4" type="video/mp4" >
+				</video>
+				<div class="progetto about-us">
+					<h1>about us</h1>
+					<div class="caption col-md-7 col-sm-12">
+						<p>dietro il progetto mezz'aria</p>
+					</div>
+				</div>
+			
+			</div>
+
+			<div class="row row1">
+				<div class="column3 col-md-6 col-sm-12">
+					<div class="title">
+						<h3>Chi siamo</h3>
+					</div>
+					
+					<div class="text">
+						<p>Ciao, siamo Alex, Claudia, Greta e Maria Letizia. <br><br>Siamo un gruppo di studenti dell’Università di San Marino. Stiamo lavorando alla realizzazione di mezz'aria, progetto di sensibilizzazione e di informazione sulla qualità dell’aria di Bologna.</p>
+					</div>
+				</div> <!--chiusura column3-->
+	
+					<div class="column4 col-md-6 col-sm-12" >
+						<div class="image"> 
+							<img class="img autori" src="img/foto_nostre_mezz.png" >
+								<div class="img_overlay">
+									<div class="didascalia"> 
+										Selfie degli autori
+									</div>
+								</div>
+						</div>
+					</div><!--chiusura column4-->
+			</div><!--chiusura row1 e chi siamo-->
+	
+			<div class="scrolly row">
+				<div class="column1 sticky-column col-md-6 col-sm-12">
+					<div class="title">
+						<h3>Da dove nasce mezz'aria</h3>
+					</div>
+	
+					<div class="text" >
+						<p>Con il progetto mezz’aria vogliamo coinvolgere le persone sul tema delle polveri sottili di PM10 e le minacce per il nostro prossimo futuro: aumentare la consapevolezza e sensibilizzare al tema del PM10, al fine di portare l’attenzione dei cittadini di Bologna su questa tematica spesso “invisibile” e, di conseguenza, trascurata.<br><br>L’obiettivo progettuale consiste, quindi, nell’aumentare la visibilità e facilitare la comprensione dei dataset sulla qualità dell’aria - sia presente, sia futura - resi pubblici da Arpae Emilia-Romagna. Inoltre, al fine di avvicinare il tema della qualità dell’aria ai passanti di Bologna, è stata ideata un’installazione per avvicinarsi al luogo d’indagine del progetto.</p>
+					</div>
+					
+					
+				</div><!--chiusura column1-->
+	
+				<div class="scrollable-column col-md-6 col-sm-12">
+					<div class="step" data-step="1">
+					</div>
+					<div class="step" data-step="2">
+						<div class="image"> 
+							<img class="img autori" src="img/origine-progetto.jpg" >
+								<div class="img_overlay">
+									<div class="didascalia"> 
+										Brochure informativa del progetto
+									</div>
+								</div>
+						</div>
+					</div>
+					<div class="step" data-step="3">
+					</div>
+				</div><!--chiusura scrollable-column-->
+			</div> <!--chiusura scrolly -->
+
+			<div class="scrolly row">
+				<div class="column1 sticky-column col-md-6 col-sm-12">
+					<div class="title">
+						<h3>L'installazione tra i portici di Bologna</h3>
+					</div>
+	
+					<div class="text" >
+						<p>Al fine di sensibilizzare ed informare i cittadini di Bologna sul PM10, è stata realizzata un’installazione presso i portici della città ad angolo tra Via Milazzo e Viale dell’Indipendenza. Si tratta di una rappresentazione dell’andamento del PM10 a Bologna nel 2022: vengono messi in evidenza i numeri di giorni che superano il limite consigliato di PM10 - la media giornaliera indicata dall’OMS per salvaguardare la nostra salute - per ogni mese dell’anno. Il dato viene reso tangibile attraverso una vera e propria unità di misura della qualità dell’aria: mezz’aria.<br><br>Una mezz’aria, infatti, corrisponde a uno strato di tessuto. Uno strato di tessuto indica da 0 a 4 giorni oltre il limite consigliato.
+
+							L’installazione rende visibile l’invisibile, permette di rendere tangibile la quantità di PM10 che rimane sospeso a mezz’aria.</p>
+					</div>
+					
+					
+				</div><!--chiusura column1-->
+	
+				<div class="scrollable-column col-md-6 col-sm-12">
+					<div class="step" data-step="1">
+					</div>
+					<div class="step" data-step="2">
+							<div class="image"> 
+								<img class="img autori" src="img/progetto-mezzaria.jpg" >
+									<div class="img_overlay">
+										<div class="didascalia"> 
+											Installazione realizzata
+										</div>
+									</div>
+							</div>
+					</div>
+					<div class="step" data-step="3">
+					</div>
+				</div><!--chiusura scrollable-column-->
+			</div> <!--chiusura scrolly -->
+
+			<div class="installazione-about-us col-12 video-container">
+			
+				<video controls class="video-installazione">
+					<source src="img/mezzaria_compresso.mp4" type="video/mp4" >
+				</video>
+			</div>
+
+			<div class="row footer-mezzaria">
+				<div class="row rowF">
+				</div>
+				<div class="row rowF">
+				</div>
+				<div class="row rowF footer-sfondo">
+					<div class="col-md-6 col-sm-12 footer-sfondo">
+						<div class="title-fonti">
+							<p><img class="img6" src="img/Sfera_singola_piccola.svg">mezz'aria</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="row rowF footer-sfondo">
+					<div class="col-md-3 col-sm-12 footer-sfondo">
+					</div>
+					<div class="col-md-3 col-sm-12 footer-sfondo">
+						<div class="text-fonti">
+							<p>Dataset</p>
+									<ul>
+										<li><a href="​​https://webbook.arpae.it/indicatore/Emissioni-di-CO-COV-NOx-SOx-PM10-NH3-CH4-CO2-N2O-e-loro-distribuzione-percentuale-per-macrosettore-00001/?id=670151aa-2fe2-11e2-95e1-11c9866a0f33">Arpae Emilia-Romagna - Inventario emissioni, 2019</a></li>
+										<li><a href="https://apps.arpae.it/qualita-aria/bollettino-qa-provinciale/bo">Arpa Emilia-Romagna - Qualità dell’aria: provincia di Bologna, 2023</a></li>
+										<li><a href="https://dati.arpae.it/dataset/erg5-eraclito ">Arpa Emilia-Romagna - Dataset climatico dal 1961, 2023</a></li>
+										<li><a href="https://www.arpae.it/it/temi-ambientali/aria/liberiamo-laria/impianti-a-biomassa/impatto-della-combustione-di-legna-e-pellet-sulla-qualita-dellaria ">Arpa Emilia-Romagna - Impatto sulla combustione, 2021</a></li>
+										
+										<li><a href="​https://dati.arpae.it/dataset/qualita-dell-aria-rete-di-monitoraggio ">Arpa Emilia-Romagna - Qualità dell’aria</a></li>
+										<li><a href="https://airindex.eea.europa.eu/Map/AQI/Viewer/">European Environment Agency - European Air Quality Index, 2023</a></li>
+										<li><a href="https://sdati.datamb.it/aqcli-vis/  ">CLARA-AQCLI - Data visualizer, 2019</a></li>
+										<li><a href="https://dati.arpae.it/dataset/clara-aqcli ">Arpa Emilia-Romagna - progetto CLARA-AQCLI, 2019</a></li>
+								</ul>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-12 footer-sfondo">
+						<div class="text-fonti">
+							<p>Reference</p>
+									<ul>
+										<li><a href="https://en.wikipedia.org/wiki/Fly_ash">C&EN - A New Life For Coal Ash, 2016</a></li>
+										<li><a href="https://www.legambiente.it/wp-content/uploads/2020/09/Dossier_aria_citta_092020.pdf">Legambiente – Mal’Aria di città, 2020</a></li>
+										<li><a href="https://apps.who.int/iris/bitstream/handle/10665/352614/WHO-EURO-2022-3162-42920-63947-ita.pdf?sequence=1&isAllowed=y ">World Health Organization - Linee guida globali OMS, 2022</a></li>
+										<li><a href="https://www.epicentro.iss.it/ambiente/qualita-aria-linee-guida-oms-2021 ">ISS - Le nuove linee guida Oms</a></li>
+										<li><a href="https://www.sciencedirect.com/science/article/pii/S0013935122020035?via%3Dihub ">BIGEPI Collaborative Group - Inquinanti atmosferici e mortalità, 2023</a></li>
+										<li><a href="https://www.arpae.it/it/temi-ambientali/aria/scopri-di-piu/pm10-effetti-sulla-salute">Arpae Emilia Romagna - PM10: effetti sulla salute, 2021</a></li>
+										<li><a href="https://www.climamarket.it/blog/focus/tutto-quello-che-c-e-da-sapere-sul-decreto-riscaldamento-2022#:~:text=Le%20date%20per%20l%27accensione,ore%20al%20giorno%20al%20massimo.">Climamarket - Decreto riscaldamento, 2022-2023</a></li>
+										<li><a href="https://www.arpa.piemonte.it/export/sites/default/pubblicazioni/pdf/3_MeteoVetta_pressione.pdf">Arpa Piemonte - Pressione e cambiamenti del tempo</a></li>
+										<li><a href="https://www.eea.europa.eu/it/themes/air/intro">European Environment Agency - Inquinamento atmosferico, 2020</a></li>
+										<li><a href="https://webbook.arpae.it/indicatore/Giorni-favorevoli-allaccumulo-di-PM10-00001/?espandi=Descrizione">Arpa Emilia-Romagna - Giorni favorevoli all’accumulo di PM10</a></li>
+								</ul>
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-12 footer-sfondo">
+						<div class="text-fonti finale">
+							<p>Approfondimenti</p>
+							<ul>
+								<li><a href="https://www.salute.gov.it/imgs/C_17_paginaRelazione_1438_listaFile_itemName_1_file.pdf">Ministero della salute - Qualità dell'aria ambiente, 2010</a></li>
+								<li><a href="https://atmosphere.copernicus.eu/why-we-investigate-composition-atmosphere ">Copernicus - Why we investigate the composition of the atmosphere</a></li>
+								<li><a href="https://www.wired.it/article/inquinamento-morti-italia-2020-numero-dati-agenzia-europea-ambiente/">WIRED - Deceduti nel 2020 in Italia a causa dell'inquinamento, 2022</a></li>
+								<li><a href="https://www.rai.it/programmi/report/inchieste/Pm10-5826fd9b-a8eb-478f-82c3-d92554c41f9f.html ">RAI - Report PM10, 2006</a></li>
+
+								<li><a href="https://www.geopop.it/quali-sono-le-relazioni-tra-pioggia-e-qualita-dellaria/">Luca Maria Mercurio - Geopop, 2023</a></li>
+								<li><a href="https://www.ansa.it/canale_ambiente/notizie/inquinamento/2021/04/15/sos-smog-con-caldaie-a-gas-in-casa-e-boom-polveri-sottili_2a3876f1-e4c0-4763-ae15-14a45898d5d8.html">Ansa - SOS smog, 2018</a></li>
+								<li><a href="https://www.ansa.it/canale_ambiente/notizie/inquinamento/2015/12/30/esperto-polveri-sottili-intrappolate-da-alta-pressione_add3e86b-4c66-4418-97d4-f1e6a11818e9.html ">ANSA - Polveri sottili intrappolate da alta pressione, 2015</a></li>
+								<li><a href="https://scied.ucar.edu/learning-zone/climate-change-impacts/predictions-future-global-climate#:~:text=Climate%20models%20predict%20that%20Earth%27s,to%20rise%20at%20present%20levels.">UCAR - Predictions of Future Global Climate, 2021</a></li>
+								<li><a href="https://www.copernicus.eu/en/copernicus-services/atmosphere ">Copernicus - Atmosphere</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div><!--chiusura row1-->
+
+			
+			<div class="blocco">
+				<button class="button scrolltotop">&#8593</button>
+			  </div>
+
+
+		</div><!--chiusura sfondo bianco-->
+		
+			
+		
+		<script src="bootstrap.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<script src="https://unpkg.com/d3@5.9.1/dist/d3.min.js"></script>
+    	<script src="https://unpkg.com/intersection-observer@0.5.1/intersection-observer.js"></script>
+    	<script src="scrollama.min.js"></script>
+		<script src="js/scrollama.js"></script>
+		<script src="js/scripts.js"></script>
+        
+
+	</body>
+</html>
